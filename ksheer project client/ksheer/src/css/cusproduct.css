@@ -1,0 +1,513 @@
+.product-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-body {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.product-button:hover {
+    background: #218838;
+}
+/* Overlay Background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.popup-container {
+    background: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    
+}
+
+/* Close Button */
+.product-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-body {
+    padding: 15px;
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.product-button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.product-button:hover {
+    background: #218838;
+}
+
+/* Overlay Background */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Container */
+.popup-container {
+    background: white;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Close Button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.close-button:hover {
+    background: darkred;
+}
+
+/* Popup Content */
+.popup-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Left Side - Product Image */
+.popup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Right Side - Product Details */
+.popup-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.popup-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.popup-description {
+    font-size: 16px;
+    color: gray;
+}
+
+.popup-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.popup-buttons {
+    margin-top: 15px;
+}
+
+.buy-button,
+.cart-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background: green;
+    color: white;
+}
+
+.cart-button {
+    background: orange;
+    color: white;
+}
+
+/* Popup Content */
+.popup-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left Side - Product Image */
+.popup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-image img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+}
+
+/* Right Side - Product Details */
+.popup-details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.popup-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.popup-description {
+    font-size: 16px;
+    color: gray;
+}
+
+.popup-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.popup-buttons {
+    margin-top: 15px;
+}
+
+.buy-button,
+.cart-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background: green;
+    color: white;
+}
+
+.cart-button {
+    background: orange;
+    color: white;
+}
+
+
+.popup-container {
+    background: white;
+    width: 70%; /* Increased width */
+    display: flex;
+    flex-direction: row; /* Ensuring image on left, details on right */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-content {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left Side - Product Image */
+.popup-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Right Side - Product Details */
+.popup-info {
+    flex: 2;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.popup-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-description {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.popup-price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.popup-buttons {
+    margin-top: 15px;
+}
+
+.buy-button,
+.cart-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background: green;
+    color: white;
+}
+
+.cart-button {
+    background: orange;
+    color: white;
+}
+
+
+/* Review Section */
+.review-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid #ddd;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.review-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Dropdown for Rating */
+.review-section select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    font-size: 14px;
+}
+
+/* Review Textarea */
+.review-section textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Submit Review Button */
+.submit-review-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.submit-review-button:hover {
+    background-color: #219150;
+}
+
+/* All Reviews Section */
+.all-reviews {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 2px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.all-reviews h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Individual Review Item */
+.review-item {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.review-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.review-item p:first-child {
+    font-weight: bold;
+}

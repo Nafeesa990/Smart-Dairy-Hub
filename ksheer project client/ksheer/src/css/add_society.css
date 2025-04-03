@@ -1,0 +1,133 @@
+.c{
+    position: absolute;
+    left:20%;
+    width:80%;
+   
+    
+}
+h1{
+    padding-left: 43%;
+    padding-top: 1%;
+    /* position: absolute; */
+}
+
+button{
+    padding-left: 38%;
+    padding-top: 1%;
+    position: absolute;
+}
+
+h3{
+    padding-left: 20%;
+    padding-top: 10%;
+    
+    display: flex;
+}
+h4{
+    padding-left: 20%;
+    
+    
+    display: flex;
+}
+
+.f{
+    position:relative;
+    top:80%;
+}
+
+
+
+table{
+    padding-left: 20%;
+    padding-top: 10%;
+    position: absolute;
+    background-color: aqua;
+    width: 50%;
+}
+.ta table{
+    position: absolute;
+    width: 80%;
+    left: 20%;
+
+}
+
+.admin-dashboard {
+    display: flex;
+}
+
+
+
+
+
+.dashboard-content {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center;
+    justify-content: flex-start; /* Moves everything to the left */
+    gap: 20px; /* Adds space between cards */
+    min-height: 50vh;
+    margin-top: 11%;
+    text-align: center;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows wrapping if needed */
+    
+    /* Forcefully move to the left */
+    position: absolute;
+    left: 0%;
+    width: calc(100% - 250px); /* Ensure it fits within layout */
+}
+/* Shadowed Box */
+.dashboard-box {
+    background: #fff; /* White background */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px;
+    width: fit-content; /* Adjust size based on content */
+    margin: auto; /* Center it horizontally */
+}
+
+/* Cards Layout */
+.dashboard-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Align cards in center */
+    flex-wrap: wrap;
+    position: absolute;
+    left: 15%;
+}
+
+/* Individual Cards */
+.dashboard-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.dashboard-card:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    background: #e9ecef; /* Light background change */
+}
+
+
+
+
+
+/* Center the cards in a row */
+/* Main Content */
+
+
+
+/* Navbar{
+    background-color: rgb(110, 9, 204);
+} */
+
+
+  

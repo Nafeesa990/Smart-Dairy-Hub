@@ -1,0 +1,140 @@
+/* General Page Styling */
+.quality-check-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #fef3c7, #fff9db);
+    padding: 20px;
+}
+
+/* Form Box */
+.form-box {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 600px; /* Increased width for better input field alignment */
+    text-align: center;
+}
+
+/* Back Button */
+.back-btn {
+    display: flex;
+    align-items: center;
+    background: #e6b800;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background: #cc9900;
+}
+
+.back-btn svg {
+    margin-right: 8px;
+}
+
+/* Form Title */
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d4a500;
+    margin-bottom: 20px;
+}
+
+/* Error Message */
+.error-message {
+    background: rgba(255, 0, 0, 0.1);
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Form Grid - Two Column Layout */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Input Box */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #fff4c2;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+.input-box:hover {
+    background: #ffed99;
+}
+
+.input-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px;
+}
+
+/* Input Icon */
+.input-icon {
+    color: #d4a500;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    background: #e6b800;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #cc9900;
+    transform: scale(1.05);
+}
+
+/* Disabled Button */
+.submit-btn.disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

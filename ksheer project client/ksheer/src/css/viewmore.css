@@ -1,0 +1,128 @@
+/* Container Styling */
+.viewmore-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Back Button */
+.back-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Product Display Layout */
+.viewmore-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.viewmore-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.viewmore-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.viewmore-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.viewmore-price {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.viewmore-ratings {
+    font-size: 20px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.viewmore-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.viewmore-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buy-button, .cart-button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.cart-button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Review Section */
+.review-section {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.review-section select, .review-section textarea, .submit-review-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.submit-review-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* All Reviews */
+.all-reviews {
+    margin-top: 20px;
+}
+
+.review-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

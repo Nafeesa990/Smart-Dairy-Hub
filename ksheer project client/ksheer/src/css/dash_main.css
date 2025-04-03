@@ -1,0 +1,130 @@
+.custom-navbar {
+    width: 20%;
+    position: absolute;
+    height: 100%;
+}
+
+.nav-link {
+    position: relative; /* Change absolute to relative */
+    left: 35px;
+    display: block; /* Ensure the links behave like blocks */
+    margin-top: 10px; /* Adjust the top margin as needed */
+}
+.custom-navbar .nav-link:hover {
+    background-color: #f3d44c;
+    color: black;
+  }
+  
+/* Adjust the top positions for each link */
+/* .s {
+    top: 10%;
+}
+
+.s2 {
+    top: 20%;
+}
+
+.s3 {
+    top: 30%;
+}
+
+.s4 {
+    top: 40%;
+}
+
+.s5 {
+    top: 50%;
+}
+
+.s6 {
+    top: 60%;
+}
+
+.s7 {
+    top: 70%;
+} */
+/* Prevents scrolling */
+html, body {
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensures the Navbar takes full height */
+.custom-navbar {
+    height: 100vh;
+    width: 250px; /* Adjust width as needed */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 20px;
+    overflow-y: auto; /* Allows scrolling inside the navbar if needed */
+}
+
+/* Style for Nav Links */
+.custom-navbar .nav {
+    width: 100%;
+}
+
+.custom-navbar .nav-link {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+.custom-navbar .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height */
+}
+
+.nav-menu {
+    flex-grow: 1; /* Pushes logout button to the bottom */
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 80%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.logout-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Center the heading */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Underline for active link */
+.active-link {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+

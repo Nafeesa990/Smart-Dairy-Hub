@@ -1,0 +1,177 @@
+/* AdminPaymentView.css */
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  overflow: hidden; /* Prevent outer scroll */
+}
+
+/* Dashboard (Sidebar) */
+.admin-dashboard {
+  width: 280px; /* Consistent with margin-left in .admin-content */
+  position: fixed; /* Keep dashboard fixed */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* background: #1f2937; */
+  padding-top: 20px;
+  color: white;
+  z-index: 10; /* Ensures it stays on top */
+}
+
+/* Main Content Area */
+.admin-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin-left: 280px; /* Matches dashboard width */
+  padding: 40px 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Payment Card */
+.payment-card {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px; /* Restrict max width for better readability */
+}
+
+/* Payment Title */
+.payment-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+/* Table Wrapper - Enables Scrolling */
+.table-wrapper {
+  max-height: 500px; /* Set max height for scroll */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border-top: 2px solid #e5e7eb; /* Match title border */
+}
+
+/* Payment Table */
+.payment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0; /* No extra margin needed */
+  background: white;
+}
+
+/* Table Header */
+.payment-table th {
+  background: linear-gradient(to right, #4f46e5, #4338ca);
+  color: white;
+  padding: 12px;
+  text-align: left;
+  position: sticky; /* Keep headers visible while scrolling */
+  top: 0;
+  z-index: 5; /* Ensure headers are above rows */
+}
+
+/* Table Body */
+.payment-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+/* Hover Effect */
+.payment-table tr:hover {
+  background-color: #f3f4f6;
+  transition: background 0.3s;
+}
+
+/* Amount Styling */
+.amount-text {
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+/* Payment Status Colors */
+.success-text {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.failed-text {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* Product Info (Uncomment if needed) */
+.product-info {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and name */
+}
+
+/* Product Image Styling */
+.product-image {
+  width: 40px; /* Consistent image size */
+  height: 40px;
+  border-radius: 8px; /* Slightly rounded for aesthetics */
+  object-fit: cover; /* Ensure image fits well */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .admin-dashboard {
+    width: 220px; /* Narrower sidebar */
+  }
+
+  .admin-content {
+    margin-left: 220px; /* Adjust content margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard {
+    width: 180px; /* Compact sidebar */
+  }
+
+  .admin-content {
+    margin-left: 180px;
+    padding: 20px; /* Reduce padding */
+  }
+
+  .payment-title {
+    font-size: 20px; /* Smaller title */
+  }
+
+  .payment-table th,
+  .payment-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-dashboard {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  .admin-content {
+    margin-left: 0; /* Full-width content */
+  }
+
+  .payment-title {
+    font-size: 18px; /* Smaller title */
+  }
+
+  .payment-table th,
+  .payment-table td {
+    font-size: 12px; /* Smaller text */
+    padding: 6px;
+  }
+
+  .product-image {
+    width: 30px; /* Adjust image size */
+    height: 30px;
+  }
+}

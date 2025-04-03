@@ -1,0 +1,108 @@
+/* deliverydash.css */
+
+:root {
+  --primary-color: #5c4670; /* Violet color */
+  --text-color: #ffffff;
+  --bg-color: #ffffff;
+  --nav-hover: #6A1BA2;
+  --border-radius: 12px;
+  --active-underline: #FFD700; /* Gold underline for active page */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.dashboard-nav {
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-nav h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.dashboard-nav ul li {
+  display: inline;
+  position: relative; /* For underline positioning */
+}
+
+.dashboard-nav ul li:first-child {
+  margin-top: 1rem; /* Moves the first item (Orders) down slightly */
+}
+
+.dashboard-nav ul li a, .dashboard-nav ul li button {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.1rem;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dashboard-nav ul li a:hover, .dashboard-nav ul li button:hover {
+  background: var(--nav-hover);
+}
+
+.dashboard-nav ul li button {
+  background: #f44336;
+}
+
+.dashboard-nav ul li button:hover {
+  background: #d32f2f;
+}
+
+/* Active link underline */
+.dashboard-nav ul li .active {
+  border-bottom: 3px solid var(--active-underline);
+}
+
+@media (max-width: 768px) {
+  .dashboard-nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .dashboard-nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-nav h2 {
+    margin-bottom: 1rem;
+  }
+
+  .dashboard-nav ul li a, .dashboard-nav ul li button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,111 @@
+/* Ensure full-screen container with no scrolling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    background: #e5f5e0; /* Soft green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Page Container */
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Card (Reduced Size) */
+.farmer-form {
+    width: 400px; /* Reduced from 400px */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Back Icon */
+.back-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 22px;
+    color: #2d6a4f; /* Dark green */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.3s;
+}
+
+.back-icon:hover {
+    transform: scale(1.1);
+    color: #1b4332; /* Darker green */
+}
+
+/* Form Title */
+.form-title {
+    font-size: 22px; /* Slightly smaller */
+    font-weight: bold;
+    color: #2d6a4f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.farmer-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* Input Fields */
+.farmer-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #2d6a4f;
+    border-radius: 6px;
+    font-size: 14px; /* Reduced font size */
+    outline: none;
+    transition: 0.3s;
+    background: #f0fdf4; /* Light green */
+}
+
+.farmer-form input:focus {
+    border-color: #1b4332;
+    box-shadow: 0 0 6px rgba(45, 106, 79, 0.4);
+}
+
+/* Submit Button */
+.form-button {
+    width: 100%;
+    padding: 10px;
+    background: #2d6a4f; /* Green */
+    color: white;
+    font-size: 14px; /* Slightly smaller */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-button:hover {
+    background: #1b4332; /* Darker Green */
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+    .farmer-form {
+        width: 90%;
+    }
+}

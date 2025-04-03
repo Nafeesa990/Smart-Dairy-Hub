@@ -1,0 +1,36 @@
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: gray;
+}
+
+.step.active {
+    color: blue;
+}
+
+.progress-line {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    height: 5px;
+    background-color: blue;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-line.cart { width: 0%; }
+.progress-line.shipping { width: 33%; }
+.progress-line.payment { width: 66%; }
+.progress-line.summary { width: 100%; }

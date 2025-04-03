@@ -1,0 +1,122 @@
+/* admin.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full-page height */
+    overflow: hidden; /* Prevent body scroll */
+}
+
+/* Admin Page Container */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto; /* Allow content scroll */
+}
+
+/* Fixed Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: 100%;
+    padding: 10px 20px;
+    background: #2E7D32;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Login Card */
+.login-card {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.6s ease-in-out;
+    margin-top: 100px; /* Space below fixed navbar */
+}
+
+/* Heading Style */
+.login-card h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Input Container */
+.input-container {
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-field {
+    width: 100%;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2E7D32;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border: 2px solid #4CAF50;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px 20px;
+    background: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #43A047;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .login-card {
+        width: 90%;
+    }
+
+    .login-card h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

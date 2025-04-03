@@ -1,0 +1,135 @@
+/* order.css */
+.order-container {
+    background: #f8f9fa;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .order-wrapper {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .order-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .no-orders {
+    text-align: center;
+    color: #6c757d;
+  }
+  
+  .order-card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .order-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+  }
+  
+  .order-id {
+    font-size: 1.2rem;
+    color: #495057;
+  }
+  
+  .order-amount {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .dropdown-icon {
+    font-size: 1.5rem;
+    color: #495057;
+  }
+  
+  .order-tracker {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .tracker-step {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  .tracker-step.completed {
+    background: #28a745;
+    color: white;
+  }
+  .tracker-step.pending {
+    background-color: green;
+    color: white;
+  }
+  
+  .order-details {
+    padding: 20px;
+    border-top: 1px solid #dee2e6;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .details-heading {
+    font-size: 1.1rem;
+    color: #343a40;
+    margin: 10px 0;
+  }
+  
+  .item-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .item-price {
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .item-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .order-date {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }  

@@ -1,0 +1,83 @@
+h1{
+    position: absolute;
+    left:20%;
+    font-size: 60px;
+    top:80px;
+    /* background-color: beige; */
+}
+.line{
+    position: absolute;
+    left:20%;
+    top:24%;
+    /* background-color: yellow; */
+}
+input{
+    padding-right: 20% ;
+    
+}
+input[type="text"].name{
+    float: right;
+    margin-right: 20px;
+    position:absolute;
+    top: 39%;
+    right: 33.3%;   
+    padding: 13px;
+    width: 25%;
+    /* background-color: rgb(226, 223, 43); */
+  }
+
+input[type="text"].eml {
+    float: right;
+    margin-right: 20px;
+    position:absolute;
+    top: 39%;
+    width: 25%;
+    right: 6%;   
+    padding: 13px;
+    /* background-color: rgb(226, 223, 43); */
+  }
+
+textarea{
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+textarea[name="message"]{
+    float: right;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 49%;
+    left:40%;
+}
+.h{
+   position: absolute;
+   left:20%;
+   top:47%;
+   /* background-color: aqua; */
+}
+.p1{
+    position: absolute;
+    left:20%;
+    top:56%;
+    /* background-color: aqua; */
+}
+.p2{
+    position: absolute;
+    left:20%;
+    top:60%;
+    /* background-color: aqua; */
+}
+.btn{
+    float: right;
+    background: green;
+    /* background: linear-gradient(purple,red); */
+    position: absolute;
+    top: 77%;
+    left:40%;
+    font-weight: 100px;
+}
+input[value='Send']{
+    font-weight: 500;
+    color: white;
+}
